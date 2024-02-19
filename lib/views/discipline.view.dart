@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school_agenda/_common/my_colors.dart';
 import 'package:school_agenda/models/daily_report.model.dart';
 import 'package:school_agenda/models/discipline.model.dart';
 
@@ -32,7 +33,7 @@ class Discipline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: MyColors.grey,
         appBar: AppBar(
           title: Column(
             children: [
@@ -57,7 +58,7 @@ class Discipline extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            print("TESTE");
+            // print("TESTE");
           },
           child: const Icon(Icons.add),
         ),
@@ -76,7 +77,7 @@ class Discipline extends StatelessWidget {
                 trailing: IconButton(
                   icon: const Icon(Icons.delete, color: Colors.red),
                   onPressed: () {
-                    print("Deletar?");
+                    // print("Deletar?");
                   },
                 ),
               );
