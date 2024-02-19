@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:school_agenda/_common/my_colors.dart';
 
-InputDecoration getAuthenticationInputDecoration(String label) {
+InputDecoration getAuthenticationInputDecoration(String label, {Icon? icon}) {
   return InputDecoration(
+    icon: icon,
     hintText: label,
     fillColor: Colors.white,
     filled: true,

@@ -34,7 +34,7 @@ class ScreenRouter extends StatelessWidget {
       stream: FirebaseAuth.instance.userChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const StartView();
+          return StartView(user: snapshot.data!);
         } else {
           return const AuthenticationView();
         }
