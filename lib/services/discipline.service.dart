@@ -30,7 +30,7 @@ class DisciplineService {
       bool isDescending) {
     return _firestore
         .collection(userId)
-        .orderBy("year", descending: isDescending)
+        .orderBy("name", descending: isDescending)
         .snapshots();
   }
 

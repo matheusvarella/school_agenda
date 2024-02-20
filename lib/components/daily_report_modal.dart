@@ -160,7 +160,7 @@ class _DailyReportModalState extends State<DailyReportModal> {
     // String year = _yearController.text;
     String numberClass = _numberClassController.text;
     String date = _dateController.text;
-    String attendance = "1";
+    String attendance = isChecked ? "1" : "0";
 
     DailyReportModel dailyReportModel = DailyReportModel(
       id: const Uuid().v1(),
